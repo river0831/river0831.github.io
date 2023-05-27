@@ -1,80 +1,33 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: Vector-based drawing
+description: Handling Gaps for Vector Lineart
+img: assets/img/ntu.png
 importance: 1
-category: work
+category: research
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/proj_gap_close.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Overview of the vector lineart gap closing method.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+<p class="justify">
+The aim of this project is to propose an semi-automatic gap handling method for 2D hand-drawn vector lineart to restore stroke connections and make it colorable.
+</p>
 
+<p class="justify">
+In computer-assisted 2D vector drawing systems, due to the precision of stroke representation, a stroke endpoint may not precisely connect to another stroke or endpoint during drawing so that the stroke endpoints become dangling. We call such dangling endpoints, gap points. With the presence of gaps on the region boundaries, regions formed by strokes frequently cannot be correctly colored using the standard ‘flood fill’ algorithm. In this paper, we propose a stroke-based technique to handle gaps in a vector drawing. The main contribution of our work is automatic computation of gap sizes of gap points without a predefined gap size and using a least energy method to handle gap points by estimating their relationship with surrounding strokes. Our approach consists of two major steps. Firstly, we cluster gap points in a drawing using Minimum Spanning Tree. Secondly, for each endpoint cluster, we use a least energy method together with predefined gap handling priority to estimate the connection of gap points. We demonstrate the effectiveness of our approach by applying it to line drawings with unresolved gap points.
+</p>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+<p class="justify">
+<strong>Keywords:</strong> vector graphics coloring, gap size independence, minimum spanning tree-based clustering, least energy function
+</p>
 
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+<p class="justify">
+<strong>Paper:</strong> Jiang, J., Seah, H. S., & Liew, H. Z. (2021). Handling gaps for vector graphics coloring. <i>The Visual Computer, 37</i>(9-11), 2473-2484.
+</p>

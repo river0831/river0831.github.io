@@ -2,28 +2,24 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Software Developer, Computer Graphics R&D
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: river.jpeg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>#28-01, Gaterway Drive</p>
+    <p>Singapore 608533</p>
+    <p>Tel: (+65)89415807</p>
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-This is the first change.
+I'm a software developer at CGG Services (Singapore) Pte Ltd. Previously, I received my Ph.D in Computer Science from Nanyang Technological University Singapore, where I was advised by Prof. Seah Hock Soon. I have extensive experiences in the field of computer grpahics, especially computational geometry and 2D animation. I have hand-on experience on commercial software development using C++ and Qt.
 
-This is the second change.
+In my Ph.D study, my research focues on graphics technologies to improve the efficiency and quality in key frame-based animation process, including line drawing analysis, vector-based drawing painting, and occlusion handling. My research outcomes have been integrated as three tools into CACANi, a 2D vector-based animation application (https://cacani.sg/). 
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+After graduation, I joined CGG Services (Singapore) Pte Ltd as a software developer and am mainly responsible for the development of graphical applications for high-end seismic data processing. Specifically, application and modules for well data processing and interpretation.

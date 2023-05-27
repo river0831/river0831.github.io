@@ -2,12 +2,18 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A collection of my major research and work projects.
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [research, work, collaboration]
 horizontal: false
 ---
+
+<div class="row">
+    <div style="margin-left: auto; margin-right: auto;">
+        {% include figure.html path="assets/img/wordcloud.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 <!-- pages/projects.md -->
 <div class="projects">

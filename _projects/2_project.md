@@ -1,80 +1,33 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: assets/img/3.jpg
+title: Vector-based inbetweening
+description: An occlusion representation
+img: assets/img/ntu.png
 importance: 2
-category: work
+category: research
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/proj_boundary_stroke.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Overview of boundary stroke-based occlusion representation for 2D line drawing.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+<p class="justify">
+The aim of this project is to propose a stroke-based occlusion representation, which makes occlusion manageable and is applicable in 2D stroke-based inbetweening.
+</p>
 
+<p class="justify">
+In conventional 2D drawing systems, a drawing usually consists of multiple layers and is composited by rendering layers from back to front. A shape in a higher layer occludes contents in lower layers. However, shapes must have boundaries that form closed regions for occlusion. This limitation causes problems in occlusion resolution. We therefore propose a method to allow users to specify and resolve occlusion in stroke-based drawing with boundary strokes. Rather than defining shapes, we introduce boundary strokes, which are strokes with occluding sides that work as occluding surfaces. We further introduce a series of user interactions, such as grouping, linking and inverting, on the boundary strokes to realize different occlusion effects. Geometry is then used to find the regions of occluding surfaces to resolve occlusion. The drawings are ready to be coloured, if needed. We extend our method to resolve occlusion in 2D stroke-based inbetweening. We demonstrate the effectiveness of our method by applying it to resolve occlusion in single drawings and 2D stroke-based inbetweening.
+</p>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+<p class="justify">
+<strong>Keywords:</strong> inbetweening, lineart, occlusion
+</p>
 
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+<p class="justify">
+<strong>Paper:</strong> Jiang, J., Seah, H. S., & Liew, H. Z. (2022, February). Stroke‐Based Drawing and Inbetweening with Boundary Strokes. In <i>Computer Graphics Forum</i> (Vol. 41, No. 1, pp. 257-269).
+</p>

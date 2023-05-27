@@ -1,80 +1,29 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
+title: RTP
+description: Reactive Compound Transformation Profiler
+img: assets/img/proj_rtp.png
 importance: 4
-category: fun
+category: collaboration
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div style="margin-left: auto; margin-right: auto;">
+        {% include figure.html path="assets/img/proj_overview_rtp.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Illustration of the RTP workflow and the matching algorithm for identifying potential reaction products, with five substeps: (1) peak pair picking and adduct annotation, (2) core structure mass definition, (3) reaction database search, (4) results print-out, and (5) MS2 confirmation. (<a href="https://pubs.acs.org/doi/abs/10.1021/acs.est.1c05262">Click for source image</a>)
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+<p class="justify">
+Reactive compounds, such as covalent toxicants/drugs, have their ubiquitous occurrences and are known to react with protein or DNA in human beings, but their reactions with endogenous metabolites are rarely understood. Currently, a viable platform is demanded for discovering their reaction products since their efficacy/toxicity may be altered after the reaction. We aim to develop a platform for identifying unknown abiotic or biotransformation products for these reactive compounds. Based on stable isotope-labeling (SIL) metabolomics, we have developed a novel and robust analytical platform, reactive compound transformation profiler (RTP), which can automatically analyze preannotated high-resolution mass spectrometry (LC-HRMS) data sets and uncover probable transformation products. Generally, RTP consists of four complementary steps: (1) selecting peak pairs of light and heavy-labeled products, (2) defining the “core structure mass” for possible reaction search, (3) constructing an endogenous metabolite reaction database, and (4) developing algorithms to propose the potential transformation products by searching against the database with a single-/multiple-site reaction. Its performance was validated using the reactive plasticizer bisphenol A diglycidyl ether (BADGE) in several sample matrices. This platform enabled the identification of novel transformation products while also demonstrating its capacity to filter out the false-positive signals and provide product annotation.
+</p>
 
+<p class="justify">
+I'm responsible for the development of the platform using C++ and Qt with graphical user interfaces to input data, run algorithm, and view results.
+</p>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+<p class="justify">
+<strong>Background knowledge:</strong> C++, Qt, multi-thread, user interface/interaction design.
+</p>
