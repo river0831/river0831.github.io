@@ -9,9 +9,9 @@ profile:
   image: river.jpeg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>#28-01, Gaterway Drive</p>
-    <p>Singapore 608533</p>
-    <p>Tel: (+65)89415807</p>
+    <p>4849 El Cemonte Ave,</p>
+    <p>Davis, CA, United States 95618</p>
+    <p>Tel: +1 (279) 789-1294</p>
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
